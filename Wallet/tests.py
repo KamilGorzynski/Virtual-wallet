@@ -2,9 +2,9 @@ from django.contrib.auth.models import User
 from rest_framework.test import APIClient
 from unittest import TestCase
 
-from quickstart.common import get_all_from_table, get_user, get_model_by_id
-from quickstart.models import Wallet, CompanyData
-from django.db import connection
+
+from wallets.common import get_all_from_table, get_user, get_model_by_id
+from wallets.models import Wallet, CompanyData
 
 
 class BaseTest(TestCase):
@@ -56,7 +56,6 @@ class BaseTestWithWallets(BaseTest):
             }]
             self.model_create(CompanyData, company_data_list)
         if not get_all_from_table(Wallet):
-            self.delete_uq_constraint()
             wallets_list = [{
                 'id': 1,
                 'user': get_user(1),
@@ -109,20 +108,3 @@ class BaseTestWithWallets(BaseTest):
                 'company_data': None,
             }]
             self.model_create(Wallet, wallets_list)
-
-    @staticmethod
-    def get_uq_constraints():
-        with connection.cursor() as cursor:
-            cursor.execute("SELECT name  FROM sys.objects  WHERE type = 'UQ'")
-            return cursor.fetchall()
-
-    def delete_uq_constraint(self):
-        uq_constraint = None
-        for constraint in self.get_uq_constraints():
-            if 'UQ__quicksta__' in constraint[0]:
-                uq_constraint = constraint[0]
-                break
-        with connection.cursor() as cursor:
-            cursor.execute(
-                'ALTER TABLE quickstart_wallet DROP CONSTRAINT {0}'.format(uq_constraint)
-            )
