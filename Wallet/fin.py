@@ -5,9 +5,9 @@ ZUS_AMOUNTS = {
 }
 
 CREDIT_TYPES = {
-    (0, 'kredyt konsumpcyjny'),
-    (1, 'kredyt hipoteczny'),
-    (2, 'kredyt konsolidacyjny'),
+    (0, 'credit 1'),
+    (1, 'credit 2'),
+    (2, 'credit 3'),
 }
 
 COUNTRIES = [
