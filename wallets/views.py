@@ -111,7 +111,7 @@ class WalletViewSet(viewsets.ModelViewSet):
         API PUT method handle for endpoint: /wallets/.
         Updates wallet account with new data.
         """
-        import pdb;pdb.set_trace()
+
         if float(request.data.get('ballance')) <= 0:
             raise LowerZeroError()
         if request.data.get('account_number'):

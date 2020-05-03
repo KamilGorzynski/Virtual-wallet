@@ -1,13 +1,13 @@
 from django.contrib.auth.models import User
 from rest_framework.test import APIClient
-from unittest import TestCase
+from rest_framework.test import APITestCase
 
 
 from wallets.common import get_all_from_table, get_user, get_model_by_id
 from wallets.models import Wallet, CompanyData
 
 
-class BaseTest(TestCase):
+class BaseTest(APITestCase):
     """ Prepare basic set up for tests like api client instance """
     client = APIClient()
 

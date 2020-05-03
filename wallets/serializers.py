@@ -32,9 +32,6 @@ class WalletSerializer(serializers.ModelSerializer):
         fields = ('id', 'user', 'ballance', 'creation_date', 'active', 'company_data',
                   'country', 'account_number', 'is_company')
 
-    # def create(self, validated_data):
-    #     return Wallet.objects.create(**validated_data)
-
     def update(self, instance, validated_data):
         company_data = validated_data.get('company_data')
         if company_data:
