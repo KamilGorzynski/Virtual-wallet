@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>transfers package &mdash; Virtual Wallet  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="transfers.migrations package" href="transfers.migrations.html" />
+    <link rel="prev" title="manage module" href="manage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Virtual Wallet
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Virtual Wallet</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Wallet.html">Wallet package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credits.html">credits package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">transfers package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="transfers.migrations.html">transfers.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-transfers.admin">transfers.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-transfers.apps">transfers.apps module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-transfers.models">transfers.models module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-transfers.serializers">transfers.serializers module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-transfers.tests">transfers.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-transfers.views">transfers.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-transfers">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wallets.html">wallets package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Virtual Wallet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Virtual Wallet</a> &raquo;</li>
+        
+      <li>transfers package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/transfers.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="transfers-package">
+<h1>transfers package<a class="headerlink" href="#transfers-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="transfers.migrations.html">transfers.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transfers.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transfers.migrations.html#module-transfers.migrations.0001_initial">transfers.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transfers.migrations.html#module-transfers.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-transfers.admin">
+<span id="transfers-admin-module"></span><h2>transfers.admin module<a class="headerlink" href="#module-transfers.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-transfers.apps">
+<span id="transfers-apps-module"></span><h2>transfers.apps module<a class="headerlink" href="#module-transfers.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="transfers.apps.TransfersConfig">
+<em class="property">class </em><code class="sig-prename descclassname">transfers.apps.</code><code class="sig-name descname">TransfersConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.apps.TransfersConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="transfers.apps.TransfersConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'transfers'</em><a class="headerlink" href="#transfers.apps.TransfersConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-transfers.models">
+<span id="transfers-models-module"></span><h2>transfers.models module<a class="headerlink" href="#module-transfers.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="transfers.models.Transfer">
+<em class="property">class </em><code class="sig-prename descclassname">transfers.models.</code><code class="sig-name descname">Transfer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">source_account</span></em>, <em class="sig-param"><span class="n">beneficiary_account</span></em>, <em class="sig-param"><span class="n">amount</span></em>, <em class="sig-param"><span class="n">currency</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">transfer_date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.models.Transfer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="transfers.models.Transfer.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#transfers.models.Transfer.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="transfers.models.Transfer.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#transfers.models.Transfer.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.models.Transfer.amount">
+<code class="sig-name descname">amount</code><a class="headerlink" href="#transfers.models.Transfer.amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.models.Transfer.beneficiary_account">
+<code class="sig-name descname">beneficiary_account</code><a class="headerlink" href="#transfers.models.Transfer.beneficiary_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.models.Transfer.currency">
+<code class="sig-name descname">currency</code><a class="headerlink" href="#transfers.models.Transfer.currency" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="transfers.models.Transfer.get_currency_display">
+<code class="sig-name descname">get_currency_display</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.CharField: currency&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.models.Transfer.get_currency_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="transfers.models.Transfer.get_next_by_transfer_date">
+<code class="sig-name descname">get_next_by_transfer_date</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: transfer_date&gt;</em>, <em class="sig-param">is_next=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.models.Transfer.get_next_by_transfer_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="transfers.models.Transfer.get_previous_by_transfer_date">
+<code class="sig-name descname">get_previous_by_transfer_date</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: transfer_date&gt;</em>, <em class="sig-param">is_next=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.models.Transfer.get_previous_by_transfer_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.models.Transfer.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#transfers.models.Transfer.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.models.Transfer.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#transfers.models.Transfer.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.models.Transfer.source_account">
+<code class="sig-name descname">source_account</code><a class="headerlink" href="#transfers.models.Transfer.source_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.models.Transfer.title">
+<code class="sig-name descname">title</code><a class="headerlink" href="#transfers.models.Transfer.title" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.models.Transfer.transfer_date">
+<code class="sig-name descname">transfer_date</code><a class="headerlink" href="#transfers.models.Transfer.transfer_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-transfers.serializers">
+<span id="transfers-serializers-module"></span><h2>transfers.serializers module<a class="headerlink" href="#module-transfers.serializers" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="transfers.serializers.TransfersDataSerializer">
+<em class="property">class </em><code class="sig-prename descclassname">transfers.serializers.</code><code class="sig-name descname">TransfersDataSerializer</code><span class="sig-paren">(</span><em class="sig-param">instance=None</em>, <em class="sig-param">data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.serializers.TransfersDataSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="py class">
+<dt id="transfers.serializers.TransfersDataSerializer.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="headerlink" href="#transfers.serializers.TransfersDataSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="transfers.serializers.TransfersDataSerializer.Meta.exclude">
+<code class="sig-name descname">exclude</code><em class="property"> = ('id',)</em><a class="headerlink" href="#transfers.serializers.TransfersDataSerializer.Meta.exclude" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.serializers.TransfersDataSerializer.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#transfers.serializers.TransfersDataSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#transfers.models.Transfer" title="transfers.models.Transfer"><code class="xref py py-class docutils literal notranslate"><span class="pre">transfers.models.Transfer</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-transfers.tests">
+<span id="transfers-tests-module"></span><h2>transfers.tests module<a class="headerlink" href="#module-transfers.tests" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="transfers.tests.SimpleTransferTest">
+<em class="property">class </em><code class="sig-prename descclassname">transfers.tests.</code><code class="sig-name descname">SimpleTransferTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.tests.SimpleTransferTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Wallet.html#Wallet.tests.BaseTestWithWallets" title="Wallet.tests.BaseTestWithWallets"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.tests.BaseTestWithWallets</span></code></a></p>
+<dl class="py method">
+<dt id="transfers.tests.SimpleTransferTest.test_beneficiary_not_exist_error">
+<code class="sig-name descname">test_beneficiary_not_exist_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#transfers.tests.SimpleTransferTest.test_beneficiary_not_exist_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="transfers.tests.SimpleTransferTest.test_insufficient_funds_error">
+<code class="sig-name descname">test_insufficient_funds_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#transfers.tests.SimpleTransferTest.test_insufficient_funds_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="transfers.tests.SimpleTransferTest.test_lower_zero_error">
+<code class="sig-name descname">test_lower_zero_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#transfers.tests.SimpleTransferTest.test_lower_zero_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="transfers.tests.SimpleTransferTest.test_transfer">
+<code class="sig-name descname">test_transfer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#transfers.tests.SimpleTransferTest.test_transfer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.tests.SimpleTransferTest.url">
+<code class="sig-name descname">url</code><em class="property"> = '/transfers/'</em><a class="headerlink" href="#transfers.tests.SimpleTransferTest.url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-transfers.views">
+<span id="transfers-views-module"></span><h2>transfers.views module<a class="headerlink" href="#module-transfers.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="transfers.views.TransferViewSet">
+<em class="property">class </em><code class="sig-prename descclassname">transfers.views.</code><code class="sig-name descname">TransferViewSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.views.TransferViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<dl class="py attribute">
+<dt id="transfers.views.TransferViewSet.basename">
+<code class="sig-name descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#transfers.views.TransferViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="transfers.views.TransferViewSet.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.views.TransferViewSet.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.views.TransferViewSet.description">
+<code class="sig-name descname">description</code><em class="property"> = None</em><a class="headerlink" href="#transfers.views.TransferViewSet.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.views.TransferViewSet.detail">
+<code class="sig-name descname">detail</code><em class="property"> = None</em><a class="headerlink" href="#transfers.views.TransferViewSet.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.views.TransferViewSet.name">
+<code class="sig-name descname">name</code><em class="property"> = None</em><a class="headerlink" href="#transfers.views.TransferViewSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="transfers.views.TransferViewSet.suffix">
+<code class="sig-name descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#transfers.views.TransferViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="transfers.views.TransferViewSet.transfer_saldo_changes">
+<code class="sig-name descname">transfer_saldo_changes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source_account</span></em>, <em class="sig-param"><span class="n">beneficiary_account</span></em>, <em class="sig-param"><span class="n">amount</span></em><span class="sig-paren">)</span><a class="headerlink" href="#transfers.views.TransferViewSet.transfer_saldo_changes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-transfers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-transfers" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="transfers.migrations.html" class="btn btn-neutral float-right" title="transfers.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="manage.html" class="btn btn-neutral float-left" title="manage module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Kamil Górzyński
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

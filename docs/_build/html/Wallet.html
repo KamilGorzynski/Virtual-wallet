@@ -1,0 +1,374 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Wallet package &mdash; Virtual Wallet  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="credits package" href="credits.html" />
+    <link rel="prev" title="Virtual Wallet" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Virtual Wallet
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Virtual Wallet</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Wallet package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Wallet.asgi">Wallet.asgi module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Wallet.errors">Wallet.errors module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Wallet.fin">Wallet.fin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Wallet.settings">Wallet.settings module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Wallet.tests">Wallet.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Wallet.urls">Wallet.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Wallet.wsgi">Wallet.wsgi module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Wallet">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="credits.html">credits package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transfers.html">transfers package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wallets.html">wallets package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Virtual Wallet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Virtual Wallet</a> &raquo;</li>
+        
+      <li>Wallet package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Wallet.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="wallet-package">
+<h1>Wallet package<a class="headerlink" href="#wallet-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Wallet.asgi">
+<span id="wallet-asgi-module"></span><h2>Wallet.asgi module<a class="headerlink" href="#module-Wallet.asgi" title="Permalink to this headline">¶</a></h2>
+<p>ASGI config for Wallet project.</p>
+<p>It exposes the ASGI callable as a module-level variable named <code class="docutils literal notranslate"><span class="pre">application</span></code>.</p>
+<p>For more information on this file, see
+<a class="reference external" href="https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/">https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/</a></p>
+</div>
+<div class="section" id="module-Wallet.errors">
+<span id="wallet-errors-module"></span><h2>Wallet.errors module<a class="headerlink" href="#module-Wallet.errors" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="Wallet.errors.BaseError">
+<em class="property">exception </em><code class="sig-prename descclassname">Wallet.errors.</code><code class="sig-name descname">BaseError</code><a class="headerlink" href="#Wallet.errors.BaseError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.exceptions.APIException</span></code></p>
+<dl class="py method">
+<dt id="Wallet.errors.BaseError.get_details_response">
+<code class="sig-name descname">get_details_response</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.errors.BaseError.get_details_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="Wallet.errors.BeneficiaryNotExistError">
+<em class="property">exception </em><code class="sig-prename descclassname">Wallet.errors.</code><code class="sig-name descname">BeneficiaryNotExistError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">beneficiary</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.errors.BeneficiaryNotExistError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Wallet.errors.BaseError" title="Wallet.errors.BaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.errors.BaseError</span></code></a></p>
+<dl class="py method">
+<dt id="Wallet.errors.BeneficiaryNotExistError.get_details_response">
+<code class="sig-name descname">get_details_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">beneficiary</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.errors.BeneficiaryNotExistError.get_details_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="Wallet.errors.ChangeAccountNumberError">
+<em class="property">exception </em><code class="sig-prename descclassname">Wallet.errors.</code><code class="sig-name descname">ChangeAccountNumberError</code><a class="headerlink" href="#Wallet.errors.ChangeAccountNumberError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Wallet.errors.BaseError" title="Wallet.errors.BaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.errors.BaseError</span></code></a></p>
+<dl class="py method">
+<dt id="Wallet.errors.ChangeAccountNumberError.get_details_response">
+<code class="sig-name descname">get_details_response</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.errors.ChangeAccountNumberError.get_details_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="Wallet.errors.InsufficientFundsError">
+<em class="property">exception </em><code class="sig-prename descclassname">Wallet.errors.</code><code class="sig-name descname">InsufficientFundsError</code><a class="headerlink" href="#Wallet.errors.InsufficientFundsError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Wallet.errors.BaseError" title="Wallet.errors.BaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.errors.BaseError</span></code></a></p>
+<dl class="py method">
+<dt id="Wallet.errors.InsufficientFundsError.get_details_response">
+<code class="sig-name descname">get_details_response</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.errors.InsufficientFundsError.get_details_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="Wallet.errors.LowerZeroError">
+<em class="property">exception </em><code class="sig-prename descclassname">Wallet.errors.</code><code class="sig-name descname">LowerZeroError</code><a class="headerlink" href="#Wallet.errors.LowerZeroError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Wallet.errors.BaseError" title="Wallet.errors.BaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.errors.BaseError</span></code></a></p>
+<dl class="py method">
+<dt id="Wallet.errors.LowerZeroError.get_details_response">
+<code class="sig-name descname">get_details_response</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.errors.LowerZeroError.get_details_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="Wallet.errors.NoOfferIdError">
+<em class="property">exception </em><code class="sig-prename descclassname">Wallet.errors.</code><code class="sig-name descname">NoOfferIdError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offer_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.errors.NoOfferIdError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Wallet.errors.BaseError" title="Wallet.errors.BaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.errors.BaseError</span></code></a></p>
+<dl class="py method">
+<dt id="Wallet.errors.NoOfferIdError.get_details_response">
+<code class="sig-name descname">get_details_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offer_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.errors.NoOfferIdError.get_details_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Wallet.fin">
+<span id="wallet-fin-module"></span><h2>Wallet.fin module<a class="headerlink" href="#module-Wallet.fin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Wallet.settings">
+<span id="wallet-settings-module"></span><h2>Wallet.settings module<a class="headerlink" href="#module-Wallet.settings" title="Permalink to this headline">¶</a></h2>
+<p>Django settings for Wallet project.</p>
+<p>Generated by ‘django-admin startproject’ using Django 3.0.5.</p>
+<p>For more information on this file, see
+<a class="reference external" href="https://docs.djangoproject.com/en/3.0/topics/settings/">https://docs.djangoproject.com/en/3.0/topics/settings/</a></p>
+<p>For the full list of settings and their values, see
+<a class="reference external" href="https://docs.djangoproject.com/en/3.0/ref/settings/">https://docs.djangoproject.com/en/3.0/ref/settings/</a></p>
+</div>
+<div class="section" id="module-Wallet.tests">
+<span id="wallet-tests-module"></span><h2>Wallet.tests module<a class="headerlink" href="#module-Wallet.tests" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="Wallet.tests.BaseTest">
+<em class="property">class </em><code class="sig-prename descclassname">Wallet.tests.</code><code class="sig-name descname">BaseTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.tests.BaseTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.test.APITestCase</span></code></p>
+<p>Prepare basic set up for tests like api client instance</p>
+<dl class="py attribute">
+<dt id="Wallet.tests.BaseTest.client">
+<code class="sig-name descname">client</code><em class="property"> = &lt;rest_framework.test.APIClient object&gt;</em><a class="headerlink" href="#Wallet.tests.BaseTest.client" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="Wallet.tests.BaseTest.model_create">
+<em class="property">static </em><code class="sig-name descname">model_create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">params_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.tests.BaseTest.model_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method creates in db rows based on provided model and list of params</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<code class="code docutils literal notranslate"><span class="pre">class</span></code>) – class of model to create in db</p></li>
+<li><p><strong>params_list</strong> (<code class="code docutils literal notranslate"><span class="pre">list</span></code>) – list of dicts containing all params</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="Wallet.tests.BaseTest.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.tests.BaseTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create users for all tests</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="Wallet.tests.BaseTestWithWallets">
+<em class="property">class </em><code class="sig-prename descclassname">Wallet.tests.</code><code class="sig-name descname">BaseTestWithWallets</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.tests.BaseTestWithWallets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Wallet.tests.BaseTest" title="Wallet.tests.BaseTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.tests.BaseTest</span></code></a></p>
+<dl class="py method">
+<dt id="Wallet.tests.BaseTestWithWallets.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Wallet.tests.BaseTestWithWallets.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create wallets and company data for all tests</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Wallet.urls">
+<span id="wallet-urls-module"></span><h2>Wallet.urls module<a class="headerlink" href="#module-Wallet.urls" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Wallet.wsgi">
+<span id="wallet-wsgi-module"></span><h2>Wallet.wsgi module<a class="headerlink" href="#module-Wallet.wsgi" title="Permalink to this headline">¶</a></h2>
+<p>WSGI config for Wallet project.</p>
+<p>It exposes the WSGI callable as a module-level variable named <code class="docutils literal notranslate"><span class="pre">application</span></code>.</p>
+<p>For more information on this file, see
+<a class="reference external" href="https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/">https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/</a></p>
+</div>
+<div class="section" id="module-Wallet">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Wallet" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="credits.html" class="btn btn-neutral float-right" title="credits package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="modules.html" class="btn btn-neutral float-left" title="Virtual Wallet" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Kamil Górzyński
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,645 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>credits package &mdash; Virtual Wallet  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="credits.migrations package" href="credits.migrations.html" />
+    <link rel="prev" title="Wallet package" href="Wallet.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Virtual Wallet
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Virtual Wallet</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Wallet.html">Wallet package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">credits package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="credits.migrations.html">credits.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-credits.admin">credits.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-credits.apps">credits.apps module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-credits.models">credits.models module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-credits.serializers">credits.serializers module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-credits.tests">credits.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-credits.views">credits.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-credits">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transfers.html">transfers package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wallets.html">wallets package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Virtual Wallet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Virtual Wallet</a> &raquo;</li>
+        
+      <li>credits package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/credits.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="credits-package">
+<h1>credits package<a class="headerlink" href="#credits-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="credits.migrations.html">credits.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="credits.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credits.migrations.html#module-credits.migrations.0001_initial">credits.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credits.migrations.html#module-credits.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-credits.admin">
+<span id="credits-admin-module"></span><h2>credits.admin module<a class="headerlink" href="#module-credits.admin" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="credits.admin.CreditAdmin">
+<em class="property">class </em><code class="sig-prename descclassname">credits.admin.</code><code class="sig-name descname">CreditAdmin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">admin_site</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.admin.CreditAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.ModelAdmin</span></code></p>
+<dl class="py method">
+<dt id="credits.admin.CreditAdmin.media">
+<em class="property">property </em><code class="sig-name descname">media</code><a class="headerlink" href="#credits.admin.CreditAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-credits.apps">
+<span id="credits-apps-module"></span><h2>credits.apps module<a class="headerlink" href="#module-credits.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="credits.apps.CreditsConfig">
+<em class="property">class </em><code class="sig-prename descclassname">credits.apps.</code><code class="sig-name descname">CreditsConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.apps.CreditsConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="credits.apps.CreditsConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'credits'</em><a class="headerlink" href="#credits.apps.CreditsConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-credits.models">
+<span id="credits-models-module"></span><h2>credits.models module<a class="headerlink" href="#module-credits.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="credits.models.Credit">
+<em class="property">class </em><code class="sig-prename descclassname">credits.models.</code><code class="sig-name descname">Credit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">amount</span></em>, <em class="sig-param"><span class="n">type</span></em>, <em class="sig-param"><span class="n">credit_ballance</span></em>, <em class="sig-param"><span class="n">rates</span></em>, <em class="sig-param"><span class="n">is_paid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.models.Credit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="credits.models.Credit.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#credits.models.Credit.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="credits.models.Credit.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#credits.models.Credit.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Credit.amount">
+<code class="sig-name descname">amount</code><a class="headerlink" href="#credits.models.Credit.amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Credit.credit_ballance">
+<code class="sig-name descname">credit_ballance</code><a class="headerlink" href="#credits.models.Credit.credit_ballance" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="credits.models.Credit.get_type_display">
+<code class="sig-name descname">get_type_display</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.CharField: type&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#credits.models.Credit.get_type_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Credit.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#credits.models.Credit.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Credit.is_paid">
+<code class="sig-name descname">is_paid</code><a class="headerlink" href="#credits.models.Credit.is_paid" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Credit.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#credits.models.Credit.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Credit.rates">
+<code class="sig-name descname">rates</code><a class="headerlink" href="#credits.models.Credit.rates" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Credit.type">
+<code class="sig-name descname">type</code><a class="headerlink" href="#credits.models.Credit.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="credits.models.Offer">
+<em class="property">class </em><code class="sig-prename descclassname">credits.models.</code><code class="sig-name descname">Offer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.models.Offer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="credits.models.Offer.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#credits.models.Offer.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="credits.models.Offer.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#credits.models.Offer.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Offer.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#credits.models.Offer.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Offer.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#credits.models.Offer.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Offer.offercomment_set">
+<code class="sig-name descname">offercomment_set</code><a class="headerlink" href="#credits.models.Offer.offercomment_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Offer.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#credits.models.Offer.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.Offer.title">
+<code class="sig-name descname">title</code><a class="headerlink" href="#credits.models.Offer.title" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="credits.models.OfferComment">
+<em class="property">class </em><code class="sig-prename descclassname">credits.models.</code><code class="sig-name descname">OfferComment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">offer</span></em>, <em class="sig-param"><span class="n">rate</span></em>, <em class="sig-param"><span class="n">comment</span></em>, <em class="sig-param"><span class="n">author</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.models.OfferComment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="credits.models.OfferComment.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#credits.models.OfferComment.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="credits.models.OfferComment.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#credits.models.OfferComment.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.OfferComment.author">
+<code class="sig-name descname">author</code><a class="headerlink" href="#credits.models.OfferComment.author" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.OfferComment.author_id">
+<code class="sig-name descname">author_id</code><a class="headerlink" href="#credits.models.OfferComment.author_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.OfferComment.comment">
+<code class="sig-name descname">comment</code><a class="headerlink" href="#credits.models.OfferComment.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.OfferComment.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#credits.models.OfferComment.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.OfferComment.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#credits.models.OfferComment.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.OfferComment.offer">
+<code class="sig-name descname">offer</code><a class="headerlink" href="#credits.models.OfferComment.offer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.OfferComment.offer_id">
+<code class="sig-name descname">offer_id</code><a class="headerlink" href="#credits.models.OfferComment.offer_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.models.OfferComment.rate">
+<code class="sig-name descname">rate</code><a class="headerlink" href="#credits.models.OfferComment.rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-credits.serializers">
+<span id="credits-serializers-module"></span><h2>credits.serializers module<a class="headerlink" href="#module-credits.serializers" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="credits.serializers.CreditDataSerializer">
+<em class="property">class </em><code class="sig-prename descclassname">credits.serializers.</code><code class="sig-name descname">CreditDataSerializer</code><span class="sig-paren">(</span><em class="sig-param">instance=None</em>, <em class="sig-param">data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#credits.serializers.CreditDataSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="py class">
+<dt id="credits.serializers.CreditDataSerializer.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="headerlink" href="#credits.serializers.CreditDataSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="credits.serializers.CreditDataSerializer.Meta.exclude">
+<code class="sig-name descname">exclude</code><em class="property"> = ('id',)</em><a class="headerlink" href="#credits.serializers.CreditDataSerializer.Meta.exclude" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.serializers.CreditDataSerializer.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#credits.serializers.CreditDataSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#credits.models.Credit" title="credits.models.Credit"><code class="xref py py-class docutils literal notranslate"><span class="pre">credits.models.Credit</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="credits.serializers.OfferAvgRate">
+<em class="property">class </em><code class="sig-prename descclassname">credits.serializers.</code><code class="sig-name descname">OfferAvgRate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offer_name</span></em>, <em class="sig-param"><span class="n">avg_rate</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.serializers.OfferAvgRate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="credits.serializers.OfferAvgRateSerializer">
+<em class="property">class </em><code class="sig-prename descclassname">credits.serializers.</code><code class="sig-name descname">OfferAvgRateSerializer</code><span class="sig-paren">(</span><em class="sig-param">instance=None</em>, <em class="sig-param">data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#credits.serializers.OfferAvgRateSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.Serializer</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-credits.tests">
+<span id="credits-tests-module"></span><h2>credits.tests module<a class="headerlink" href="#module-credits.tests" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="credits.tests.OfferAvgRateTest">
+<em class="property">class </em><code class="sig-prename descclassname">credits.tests.</code><code class="sig-name descname">OfferAvgRateTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.tests.OfferAvgRateTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Wallet.html#Wallet.tests.BaseTest" title="Wallet.tests.BaseTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.tests.BaseTest</span></code></a></p>
+<dl class="py method">
+<dt id="credits.tests.OfferAvgRateTest.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#credits.tests.OfferAvgRateTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create users for all tests</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="credits.tests.OfferAvgRateTest.test_avg_rate">
+<code class="sig-name descname">test_avg_rate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#credits.tests.OfferAvgRateTest.test_avg_rate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="credits.tests.OfferAvgRateTest.test_no_offer_id_error">
+<code class="sig-name descname">test_no_offer_id_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#credits.tests.OfferAvgRateTest.test_no_offer_id_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.tests.OfferAvgRateTest.url">
+<code class="sig-name descname">url</code><em class="property"> = '/offer_rate/avg/'</em><a class="headerlink" href="#credits.tests.OfferAvgRateTest.url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-credits.views">
+<span id="credits-views-module"></span><h2>credits.views module<a class="headerlink" href="#module-credits.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="credits.views.CreditViewSet">
+<em class="property">class </em><code class="sig-prename descclassname">credits.views.</code><code class="sig-name descname">CreditViewSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.views.CreditViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<p>API endpoint that allows credits to be viewed or edited.</p>
+<dl class="py attribute">
+<dt id="credits.views.CreditViewSet.basename">
+<code class="sig-name descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.CreditViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.CreditViewSet.description">
+<code class="sig-name descname">description</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.CreditViewSet.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.CreditViewSet.detail">
+<code class="sig-name descname">detail</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.CreditViewSet.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.CreditViewSet.name">
+<code class="sig-name descname">name</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.CreditViewSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.CreditViewSet.queryset">
+<code class="sig-name descname">queryset</code><em class="property"> = &lt;QuerySet []&gt;</em><a class="headerlink" href="#credits.views.CreditViewSet.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.CreditViewSet.serializer_class">
+<code class="sig-name descname">serializer_class</code><a class="headerlink" href="#credits.views.CreditViewSet.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#credits.serializers.CreditDataSerializer" title="credits.serializers.CreditDataSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">credits.serializers.CreditDataSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.CreditViewSet.suffix">
+<code class="sig-name descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.CreditViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="credits.views.OfferAvgRateViewSet">
+<em class="property">class </em><code class="sig-prename descclassname">credits.views.</code><code class="sig-name descname">OfferAvgRateViewSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.views.OfferAvgRateViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<dl class="py method">
+<dt id="credits.views.OfferAvgRateViewSet.avg">
+<code class="sig-name descname">avg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.views.OfferAvgRateViewSet.avg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.OfferAvgRateViewSet.basename">
+<code class="sig-name descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.OfferAvgRateViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.OfferAvgRateViewSet.description">
+<code class="sig-name descname">description</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.OfferAvgRateViewSet.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.OfferAvgRateViewSet.detail">
+<code class="sig-name descname">detail</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.OfferAvgRateViewSet.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="credits.views.OfferAvgRateViewSet.get_avg_rate">
+<code class="sig-name descname">get_avg_rate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offer_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.views.OfferAvgRateViewSet.get_avg_rate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="credits.views.OfferAvgRateViewSet.get_offer_title">
+<code class="sig-name descname">get_offer_title</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offer_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#credits.views.OfferAvgRateViewSet.get_offer_title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.OfferAvgRateViewSet.name">
+<code class="sig-name descname">name</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.OfferAvgRateViewSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="credits.views.OfferAvgRateViewSet.suffix">
+<code class="sig-name descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#credits.views.OfferAvgRateViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-credits">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-credits" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="credits.migrations.html" class="btn btn-neutral float-right" title="credits.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Wallet.html" class="btn btn-neutral float-left" title="Wallet package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Kamil Górzyński
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

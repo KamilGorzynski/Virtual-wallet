@@ -1,0 +1,875 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>wallets package &mdash; Virtual Wallet  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="wallets.migrations package" href="wallets.migrations.html" />
+    <link rel="prev" title="transfers.migrations package" href="transfers.migrations.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Virtual Wallet
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Virtual Wallet</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Wallet.html">Wallet package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credits.html">credits package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transfers.html">transfers package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">wallets package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wallets.migrations.html">wallets.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wallets.admin">wallets.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wallets.apps">wallets.apps module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wallets.common">wallets.common module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wallets.models">wallets.models module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wallets.serializers">wallets.serializers module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wallets.tests">wallets.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wallets.views">wallets.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wallets">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Virtual Wallet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Virtual Wallet</a> &raquo;</li>
+        
+      <li>wallets package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/wallets.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="wallets-package">
+<h1>wallets package<a class="headerlink" href="#wallets-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="wallets.migrations.html">wallets.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wallets.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wallets.migrations.html#module-wallets.migrations.0001_initial">wallets.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wallets.migrations.html#module-wallets.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-wallets.admin">
+<span id="wallets-admin-module"></span><h2>wallets.admin module<a class="headerlink" href="#module-wallets.admin" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wallets.admin.WalletAdmin">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.admin.</code><code class="sig-name descname">WalletAdmin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">admin_site</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.admin.WalletAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.ModelAdmin</span></code></p>
+<dl class="py method">
+<dt id="wallets.admin.WalletAdmin.media">
+<em class="property">property </em><code class="sig-name descname">media</code><a class="headerlink" href="#wallets.admin.WalletAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-wallets.apps">
+<span id="wallets-apps-module"></span><h2>wallets.apps module<a class="headerlink" href="#module-wallets.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wallets.apps.WalletsConfig">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.apps.</code><code class="sig-name descname">WalletsConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.apps.WalletsConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="wallets.apps.WalletsConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'wallets'</em><a class="headerlink" href="#wallets.apps.WalletsConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-wallets.common">
+<span id="wallets-common-module"></span><h2>wallets.common module<a class="headerlink" href="#module-wallets.common" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="wallets.common.get_all_from_table">
+<code class="sig-prename descclassname">wallets.common.</code><code class="sig-name descname">get_all_from_table</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.common.get_all_from_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="wallets.common.get_all_ids">
+<code class="sig-prename descclassname">wallets.common.</code><code class="sig-name descname">get_all_ids</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.common.get_all_ids" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="wallets.common.get_model_by_id">
+<code class="sig-prename descclassname">wallets.common.</code><code class="sig-name descname">get_model_by_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">model_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.common.get_model_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="wallets.common.get_user">
+<code class="sig-prename descclassname">wallets.common.</code><code class="sig-name descname">get_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.common.get_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="wallets.common.get_wallet_by_account_number">
+<code class="sig-prename descclassname">wallets.common.</code><code class="sig-name descname">get_wallet_by_account_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.common.get_wallet_by_account_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="wallets.common.get_zus_amount">
+<code class="sig-prename descclassname">wallets.common.</code><code class="sig-name descname">get_zus_amount</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.common.get_zus_amount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="wallets.common.not_exist">
+<code class="sig-prename descclassname">wallets.common.</code><code class="sig-name descname">not_exist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">field</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.common.not_exist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-wallets.models">
+<span id="wallets-models-module"></span><h2>wallets.models module<a class="headerlink" href="#module-wallets.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wallets.models.CompanyData">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.models.</code><code class="sig-name descname">CompanyData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">nip</span></em>, <em class="sig-param"><span class="n">regon</span></em>, <em class="sig-param"><span class="n">company_start_date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.models.CompanyData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wallets.models.CompanyData.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wallets.models.CompanyData.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wallets.models.CompanyData.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wallets.models.CompanyData.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.CompanyData.company_start_date">
+<code class="sig-name descname">company_start_date</code><a class="headerlink" href="#wallets.models.CompanyData.company_start_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wallets.models.CompanyData.get_next_by_company_start_date">
+<code class="sig-name descname">get_next_by_company_start_date</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: company_start_date&gt;</em>, <em class="sig-param">is_next=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.models.CompanyData.get_next_by_company_start_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="wallets.models.CompanyData.get_previous_by_company_start_date">
+<code class="sig-name descname">get_previous_by_company_start_date</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: company_start_date&gt;</em>, <em class="sig-param">is_next=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.models.CompanyData.get_previous_by_company_start_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.CompanyData.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#wallets.models.CompanyData.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.CompanyData.nip">
+<code class="sig-name descname">nip</code><a class="headerlink" href="#wallets.models.CompanyData.nip" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.CompanyData.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wallets.models.CompanyData.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.CompanyData.regon">
+<code class="sig-name descname">regon</code><a class="headerlink" href="#wallets.models.CompanyData.regon" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.CompanyData.wallet">
+<code class="sig-name descname">wallet</code><a class="headerlink" href="#wallets.models.CompanyData.wallet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the reverse side of a one-to-one
+relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="n">OneToOneField</span><span class="p">(</span><span class="n">Place</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;restaurant&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Place.restaurant</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseOneToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.models.Wallet">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.models.</code><code class="sig-name descname">Wallet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">account_number</span></em>, <em class="sig-param"><span class="n">country</span></em>, <em class="sig-param"><span class="n">ballance</span></em>, <em class="sig-param"><span class="n">creation_date</span></em>, <em class="sig-param"><span class="n">active</span></em>, <em class="sig-param"><span class="n">is_company</span></em>, <em class="sig-param"><span class="n">company_data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.models.Wallet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wallets.models.Wallet.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wallets.models.Wallet.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wallets.models.Wallet.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wallets.models.Wallet.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.account_number">
+<code class="sig-name descname">account_number</code><a class="headerlink" href="#wallets.models.Wallet.account_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.active">
+<code class="sig-name descname">active</code><a class="headerlink" href="#wallets.models.Wallet.active" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.ballance">
+<code class="sig-name descname">ballance</code><a class="headerlink" href="#wallets.models.Wallet.ballance" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.company_data">
+<code class="sig-name descname">company_data</code><a class="headerlink" href="#wallets.models.Wallet.company_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a one-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="n">OneToOneField</span><span class="p">(</span><span class="n">Place</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;restaurant&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Restaurant.place</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardOneToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.company_data_id">
+<code class="sig-name descname">company_data_id</code><a class="headerlink" href="#wallets.models.Wallet.company_data_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.country">
+<code class="sig-name descname">country</code><a class="headerlink" href="#wallets.models.Wallet.country" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.creation_date">
+<code class="sig-name descname">creation_date</code><a class="headerlink" href="#wallets.models.Wallet.creation_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#wallets.models.Wallet.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.is_company">
+<code class="sig-name descname">is_company</code><a class="headerlink" href="#wallets.models.Wallet.is_company" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wallets.models.Wallet.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.user">
+<code class="sig-name descname">user</code><a class="headerlink" href="#wallets.models.Wallet.user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.models.Wallet.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#wallets.models.Wallet.user_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-wallets.serializers">
+<span id="wallets-serializers-module"></span><h2>wallets.serializers module<a class="headerlink" href="#module-wallets.serializers" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wallets.serializers.CompanyDataSerializer">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.serializers.</code><code class="sig-name descname">CompanyDataSerializer</code><span class="sig-paren">(</span><em class="sig-param">instance=None</em>, <em class="sig-param">data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.serializers.CompanyDataSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="py class">
+<dt id="wallets.serializers.CompanyDataSerializer.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="headerlink" href="#wallets.serializers.CompanyDataSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="wallets.serializers.CompanyDataSerializer.Meta.exclude">
+<code class="sig-name descname">exclude</code><em class="property"> = ('id',)</em><a class="headerlink" href="#wallets.serializers.CompanyDataSerializer.Meta.exclude" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.serializers.CompanyDataSerializer.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#wallets.serializers.CompanyDataSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#wallets.models.CompanyData" title="wallets.models.CompanyData"><code class="xref py py-class docutils literal notranslate"><span class="pre">wallets.models.CompanyData</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.serializers.GroupSerializer">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.serializers.</code><code class="sig-name descname">GroupSerializer</code><span class="sig-paren">(</span><em class="sig-param">instance=None</em>, <em class="sig-param">data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.serializers.GroupSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.HyperlinkedModelSerializer</span></code></p>
+<dl class="py class">
+<dt id="wallets.serializers.GroupSerializer.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="headerlink" href="#wallets.serializers.GroupSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="wallets.serializers.GroupSerializer.Meta.fields">
+<code class="sig-name descname">fields</code><em class="property"> = ('url', 'name')</em><a class="headerlink" href="#wallets.serializers.GroupSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.serializers.GroupSerializer.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#wallets.serializers.GroupSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.models.Group</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.serializers.UserSerializer">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.serializers.</code><code class="sig-name descname">UserSerializer</code><span class="sig-paren">(</span><em class="sig-param">instance=None</em>, <em class="sig-param">data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.serializers.UserSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.HyperlinkedModelSerializer</span></code></p>
+<dl class="py class">
+<dt id="wallets.serializers.UserSerializer.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="headerlink" href="#wallets.serializers.UserSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="wallets.serializers.UserSerializer.Meta.fields">
+<code class="sig-name descname">fields</code><em class="property"> = ('username', 'email')</em><a class="headerlink" href="#wallets.serializers.UserSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.serializers.UserSerializer.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#wallets.serializers.UserSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.models.User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.serializers.WalletSerializer">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.serializers.</code><code class="sig-name descname">WalletSerializer</code><span class="sig-paren">(</span><em class="sig-param">instance=None</em>, <em class="sig-param">data=&lt;class 'rest_framework.fields.empty'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.serializers.WalletSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.ModelSerializer</span></code></p>
+<dl class="py class">
+<dt id="wallets.serializers.WalletSerializer.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="headerlink" href="#wallets.serializers.WalletSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="wallets.serializers.WalletSerializer.Meta.fields">
+<code class="sig-name descname">fields</code><em class="property"> = ('id', 'user', 'ballance', 'creation_date', 'active', 'company_data', 'country', 'account_number', 'is_company')</em><a class="headerlink" href="#wallets.serializers.WalletSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.serializers.WalletSerializer.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#wallets.serializers.WalletSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#wallets.models.Wallet" title="wallets.models.Wallet"><code class="xref py py-class docutils literal notranslate"><span class="pre">wallets.models.Wallet</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt id="wallets.serializers.WalletSerializer.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">instance</span></em>, <em class="sig-param"><span class="n">validated_data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.serializers.WalletSerializer.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-wallets.tests">
+<span id="wallets-tests-module"></span><h2>wallets.tests module<a class="headerlink" href="#module-wallets.tests" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wallets.tests.CRUDWalletTest">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.tests.</code><code class="sig-name descname">CRUDWalletTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.CRUDWalletTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Wallet.html#Wallet.tests.BaseTestWithWallets" title="Wallet.tests.BaseTestWithWallets"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.tests.BaseTestWithWallets</span></code></a></p>
+<dl class="py method">
+<dt id="wallets.tests.CRUDWalletTest.test_crud_1">
+<code class="sig-name descname">test_crud_1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.CRUDWalletTest.test_crud_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Test</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wallets.tests.CRUDWalletTest.test_crud_2">
+<code class="sig-name descname">test_crud_2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.CRUDWalletTest.test_crud_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete Test</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.tests.CRUDWalletTest.url">
+<code class="sig-name descname">url</code><em class="property"> = '/wallets/'</em><a class="headerlink" href="#wallets.tests.CRUDWalletTest.url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.tests.EnglishWalletTest">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.tests.</code><code class="sig-name descname">EnglishWalletTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.EnglishWalletTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Wallet.html#Wallet.tests.BaseTestWithWallets" title="Wallet.tests.BaseTestWithWallets"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.tests.BaseTestWithWallets</span></code></a></p>
+<dl class="py method">
+<dt id="wallets.tests.EnglishWalletTest.test_get_query_params">
+<code class="sig-name descname">test_get_query_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.EnglishWalletTest.test_get_query_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.tests.EnglishWalletTest.url">
+<code class="sig-name descname">url</code><em class="property"> = '/wallets/?country=England'</em><a class="headerlink" href="#wallets.tests.EnglishWalletTest.url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.tests.UpdateWalletTest">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.tests.</code><code class="sig-name descname">UpdateWalletTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.UpdateWalletTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Wallet.html#Wallet.tests.BaseTestWithWallets" title="Wallet.tests.BaseTestWithWallets"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.tests.BaseTestWithWallets</span></code></a></p>
+<dl class="py method">
+<dt id="wallets.tests.UpdateWalletTest.get_company_data_by_nip">
+<code class="sig-name descname">get_company_data_by_nip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nip</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.UpdateWalletTest.get_company_data_by_nip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="wallets.tests.UpdateWalletTest.get_wallet_company_data">
+<code class="sig-name descname">get_wallet_company_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.UpdateWalletTest.get_wallet_company_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.tests.UpdateWalletTest.request">
+<code class="sig-name descname">request</code><em class="property"> = {'account_number': None, 'active': True, 'ballance': 2000, 'company_data': {'company_start_date': '2016-09-02T16:01:41Z', 'nip': 1152702553, 'regon': 377921888}, 'country': 'Poland', 'creation_date': '2019-08-30 20:02:15.0000000', 'id': 5, 'is_company': False, 'user': 3}</em><a class="headerlink" href="#wallets.tests.UpdateWalletTest.request" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="wallets.tests.UpdateWalletTest.test_update_company_data_1">
+<code class="sig-name descname">test_update_company_data_1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.UpdateWalletTest.test_update_company_data_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create CompanyData object while update wallet data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wallets.tests.UpdateWalletTest.test_update_company_data_2">
+<code class="sig-name descname">test_update_company_data_2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.UpdateWalletTest.test_update_company_data_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modify CompanyData object while update wallet data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wallets.tests.UpdateWalletTest.test_update_company_data_3">
+<code class="sig-name descname">test_update_company_data_3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.UpdateWalletTest.test_update_company_data_3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete CompanyData object while update wallet data</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.tests.UpdateWalletTest.url">
+<code class="sig-name descname">url</code><em class="property"> = '/wallets/5/'</em><a class="headerlink" href="#wallets.tests.UpdateWalletTest.url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.tests.ZusDayTest">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.tests.</code><code class="sig-name descname">ZusDayTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.ZusDayTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Wallet.html#Wallet.tests.BaseTestWithWallets" title="Wallet.tests.BaseTestWithWallets"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wallet.tests.BaseTestWithWallets</span></code></a></p>
+<dl class="py method">
+<dt id="wallets.tests.ZusDayTest.test_zus_day_method">
+<code class="sig-name descname">test_zus_day_method</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.tests.ZusDayTest.test_zus_day_method" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.tests.ZusDayTest.url">
+<code class="sig-name descname">url</code><em class="property"> = '/wallets/zus_day/'</em><a class="headerlink" href="#wallets.tests.ZusDayTest.url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-wallets.views">
+<span id="wallets-views-module"></span><h2>wallets.views module<a class="headerlink" href="#module-wallets.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wallets.views.GroupViewSet">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.views.</code><code class="sig-name descname">GroupViewSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.GroupViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<p>API endpoint that allows groups to be viewed or edited.</p>
+<dl class="py attribute">
+<dt id="wallets.views.GroupViewSet.basename">
+<code class="sig-name descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.GroupViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.GroupViewSet.description">
+<code class="sig-name descname">description</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.GroupViewSet.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.GroupViewSet.detail">
+<code class="sig-name descname">detail</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.GroupViewSet.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.GroupViewSet.name">
+<code class="sig-name descname">name</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.GroupViewSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.GroupViewSet.queryset">
+<code class="sig-name descname">queryset</code><em class="property"> = &lt;QuerySet []&gt;</em><a class="headerlink" href="#wallets.views.GroupViewSet.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.GroupViewSet.serializer_class">
+<code class="sig-name descname">serializer_class</code><a class="headerlink" href="#wallets.views.GroupViewSet.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#wallets.serializers.GroupSerializer" title="wallets.serializers.GroupSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">wallets.serializers.GroupSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.GroupViewSet.suffix">
+<code class="sig-name descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.GroupViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.views.UserViewSet">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.views.</code><code class="sig-name descname">UserViewSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.UserViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<p>API endpoint that allows users to be viewed or edited.</p>
+<dl class="py attribute">
+<dt id="wallets.views.UserViewSet.basename">
+<code class="sig-name descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.UserViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.UserViewSet.description">
+<code class="sig-name descname">description</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.UserViewSet.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.UserViewSet.detail">
+<code class="sig-name descname">detail</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.UserViewSet.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.UserViewSet.name">
+<code class="sig-name descname">name</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.UserViewSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.UserViewSet.queryset">
+<code class="sig-name descname">queryset</code><em class="property"> = &lt;QuerySet [&lt;User: Company2&gt;, &lt;User: Company1&gt;, &lt;User: User3&gt;, &lt;User: User2&gt;, &lt;User: User1&gt;]&gt;</em><a class="headerlink" href="#wallets.views.UserViewSet.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.UserViewSet.serializer_class">
+<code class="sig-name descname">serializer_class</code><a class="headerlink" href="#wallets.views.UserViewSet.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#wallets.serializers.UserSerializer" title="wallets.serializers.UserSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">wallets.serializers.UserSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.UserViewSet.suffix">
+<code class="sig-name descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.UserViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wallets.views.WalletViewSet">
+<em class="property">class </em><code class="sig-prename descclassname">wallets.views.</code><code class="sig-name descname">WalletViewSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.WalletViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<p>API endpoint that allows active wallets to be viewed or edited.</p>
+<dl class="py attribute">
+<dt id="wallets.views.WalletViewSet.basename">
+<code class="sig-name descname">basename</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.WalletViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="wallets.views.WalletViewSet.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.WalletViewSet.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>API POST method handle for endpoint: /wallets/.
+Creates new wallet account for provided data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wallets.views.WalletViewSet.create_billnumber">
+<em class="property">static </em><code class="sig-name descname">create_billnumber</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">country</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.WalletViewSet.create_billnumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method generates IBAN number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>country</strong> (<code class="code docutils literal notranslate"><span class="pre">str</span></code>) – default ‘PL’</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>iban number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.WalletViewSet.description">
+<code class="sig-name descname">description</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.WalletViewSet.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.WalletViewSet.detail">
+<code class="sig-name descname">detail</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.WalletViewSet.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="wallets.views.WalletViewSet.get_queryset">
+<code class="sig-name descname">get_queryset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.WalletViewSet.get_queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check, if ulr contains query param country</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>all active wallets</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wallets.views.WalletViewSet.list">
+<code class="sig-name descname">list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.WalletViewSet.list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.WalletViewSet.name">
+<code class="sig-name descname">name</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.WalletViewSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.WalletViewSet.serializer_class">
+<code class="sig-name descname">serializer_class</code><a class="headerlink" href="#wallets.views.WalletViewSet.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#wallets.serializers.WalletSerializer" title="wallets.serializers.WalletSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">wallets.serializers.WalletSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wallets.views.WalletViewSet.suffix">
+<code class="sig-name descname">suffix</code><em class="property"> = None</em><a class="headerlink" href="#wallets.views.WalletViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="wallets.views.WalletViewSet.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.WalletViewSet.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>API PUT method handle for endpoint: /wallets/.
+Updates wallet account with new data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wallets.views.WalletViewSet.zus_day">
+<code class="sig-name descname">zus_day</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wallets.views.WalletViewSet.zus_day" title="Permalink to this definition">¶</a></dt>
+<dd><p>Django action methods, charges from all wallets ZUS fee.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-wallets">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wallets" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="wallets.migrations.html" class="btn btn-neutral float-right" title="wallets.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="transfers.migrations.html" class="btn btn-neutral float-left" title="transfers.migrations package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Kamil Górzyński
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
