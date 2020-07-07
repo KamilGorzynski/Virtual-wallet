@@ -4,7 +4,7 @@ from rest_framework.response import Response
 
 from .models import Transfer
 from wallets.models import Wallet
-from wallets.common import not_exist, get_wallet_by_account_number
+from wallets.common import get_wallet_by_account_number
 from Wallet.errors import (
     BeneficiaryNotExistError,
     LowerZeroError,
@@ -31,7 +31,7 @@ class TransferViewSet(viewsets.ModelViewSet):
         amount = float(data.get('amount')) or 0
         if amount <= 0:
             raise LowerZeroError()
-        if not_exist(Wallet, 'account_number', beneficiary_acc):
+        if not Wallet.objects.filter(account_number=beneficiary_acc):
             raise BeneficiaryNotExistError(beneficiary_acc)
         self.transfer_saldo_changes(source_acc, beneficiary_acc, amount)
         Transfer.objects.create(

@@ -1,5 +1,4 @@
 from django.contrib.auth.models import User
-from django.db import connection
 
 from Wallet.fin import ZUS_AMOUNTS
 
@@ -28,23 +27,6 @@ def get_all_ids(model):
 
 def get_model_by_id(model, model_id):
     return model.objects.get(id=model_id)
-
-
-def not_exist(model, field, value):
-    def get_table_name(model):
-        return '{package_name}_{model_name}'.format(
-            package_name=model.__module__.split('.')[0].lower(),
-            model_name=model.__name__.lower()
-        )
-    with connection.cursor() as cursor:
-        cursor.execute(
-            'SELECT count(0) FROM {table} WHERE {field} = \'{value}\''.format(
-                table=get_table_name(model),
-                field=field,
-                value=value
-            )
-        )
-        return cursor.fetchone()[0] == 0
 
 
 def get_all_from_table(model):
